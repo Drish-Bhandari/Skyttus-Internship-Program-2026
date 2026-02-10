@@ -1,0 +1,11 @@
+@model EfRepoMvcApp.Models.Student
+
+<h2>Edit Student</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    Name: <input asp-for="Name" /><br />
+    Department: <input asp-for="Department" /><br />
+    Marks: <input asp-for="Marks" /><br />
+    <button type="submit">Update</button>
+</form>

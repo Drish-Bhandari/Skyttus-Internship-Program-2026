@@ -1,0 +1,10 @@
+@model EfRepoMvcApp.Models.Student
+
+<h2>Delete Student</h2>
+
+<p>Are you sure?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Yes, Delete</button>
+</form>
